@@ -1,3 +1,3 @@
--------  [ wiki of arthur.xn--grgoi-csa.re ]  -------
+-------  [  http://wiki.xn--grgoi-csa.re ]  -------
 
-- hosted on nginx block server
+-  a nginx server block
