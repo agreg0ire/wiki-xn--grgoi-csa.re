@@ -2,8 +2,6 @@ language: php #no matter which language
 install: true #no install
 script: #no tests
   -
-before_deploy:
-  - rvm 1.9.3 do gem install aws-sdk -v 2.1.36 #not necessary because AWS cred are stored within travis web page
 deploy:
   provider: s3
   skip_cleanup: true
