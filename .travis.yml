@@ -7,7 +7,7 @@ deploy:
   access_key_id: $AWS_ACCESS_ID
   secret_access_key: $AWS_SECRET_KEY
   bucket: wiki.xn--grgoi-csa.re
-  acl: public_read
+  acl: public_read_write
   on:
     repo: agreg0ire/wiki.xn--grgoi-csa.re
   region: us-west-2 #By default the region is us-east-1
