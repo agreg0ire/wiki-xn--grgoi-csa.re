@@ -11,7 +11,6 @@ deploy:
   on:
     repo: agreg0ire/wiki.xn--grgoi-csa.re
   region: us-west-2 #By default the region is us-east-1
-  endpoint: wiki.xn--grgoi-csa.re.s3-website-us-west-2.amazonaws.com #one must enable web hosting on the bucket to have the end point
 notifications:
   email:
     on_failure: always

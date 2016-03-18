@@ -14,63 +14,46 @@
         }
 
         a{
+            margin: 5px;
             color: cornflowerblue;
             text-decoration: none;
         }
 
-        p{ margin-top: 20px; }
+        p{ margin-top: 20px; display: flex; align-items: center; flex-flow: row wrap; justify-content: center; }
 
         h1{ text-align: center; }
 
-        img{ max-width: 50px; max-height: 50px; border: none; }
+        img{ max-width: 150px; max-height: 75px; border: none; }
+
     </style>
 </head>
 <body>
 
-<h1>Which technologies are used in <a href="http://arthur.grégoi.re" target="_blank">arthur.grégoi.re</a>:</h1>
+<h1>Which technologies are used in <a href="http://arthur.grégoi.re" target="_blank">arthur.grégoi.re</a></h1>
 
-<p>- <a href="http://aws.amazon.com/" target="_blank"><img src="logos/aws_logo.png" /> </a> for the hosting:
+<p>A webhook on my private <a href="https://github.com" target="_blank"><img src="logos/github_logo.jpg"></a> repo will deploy any push to <a href="http://heroku.com" target="_blank"><img src="logos/heroku-logo.jpg" /></a>
 
-<p>---> <b>ec2</b> where the "logical" part is based</p>
-
-<p>---> <b>s3</b> bucket where are stored my pictures visible in <a href="http://arthur.grégoi.re/photos" target="_blank">/photos</a>
-
-using the <a href="https://github.com/aws/aws-sdk-php" target="_blank">AWS SDK for PHP</a> to display them:
-(installed with <a href="https://getcomposer.org/" target="_blank"><img src="logos/composer_logo.png"></a>)
+<p><a href="https://aws.amazon.com/fr/sdk-for-browser/" target="_blank">AWS SDK JavaScript</a> to read in s3 buckets where are stored my pictures visible in
+    <a href="http://arthur.grégoi.re/photos" target="_blank">/photos</a>
 </p>
 
-<p>---> <b>RDS</b> as a dedicated DB instance using <a href="https://mariadb.com/" target="_blank"><img src="logos/88_Mariadb_seal_shaded_browntext_alt.png"></a> to save more rich textual values like which is visible in <a href="http://arthur.grégoi.re/tips" target="_blank">/tips</a>
-    and therefore be able to perform easier search.</p>
+<p><a href="https://www.gandi.net" target="_blank"><img src="logos/gandi_logo.png"></a> as the registrar and DNS system</p>
 
-<p>---><b>CodeDeploy</b> to update seamlessly and automatically content modified from my local machine to my public <img src="logos/logo-github.png" border="none" /> repo then finally to push to the production ec2 instance</p>
-
-<p>- <a href="https://www.gandi.net" target="_blank"><img src="logos/gandi_logo.png"></a> as the registrar and DNS system</p>
-
-<p>- A development version of <a href="http://nginx.org/" target="_blank"><img src="logos/nginx_logo.png"></a> to be able to use <a href="https://en.wikipedia.org/wiki/HTTP/2" target="_blank"><img src="logos/http2_logo.png"></a> <a href="https://tools.keycdn.com/http2-test" target="_blank">here</a> you can check the report details of my domain (arthur.xn--grgoi-csa.re)
-</p>
-
-<p>- <a href="http://php.net/" target="_blank"><img src="logos/php7.png"></a> as server sided scripted language and using the PPA of Ondřej Surý:
-<a href="https://launchpad.net/~ondrej/+archive/ubuntu/php-7.0" target="_blank">ppa:ondrej/php-7.0</a>
-
-in FPM mode and with APCu Support enabled as server byte code cache.
-
+<p><a href="http://php.net/" target="_blank"><img src="logos/php56.png"></a> as server sided scripted language.&nbsp;
 See the <a href="http://arthur.grégoi.re/info.php" target="_blank">phpinfo();</a>
-
 </p>
 
-<p>- <a href="http://redis.io/" target="_blank"><img src="logos/redis_logo.png"> </a> to record user agent datas hits on index page and visible <a href="http://arthur.xn--grgoi-csa.re/naviguateThruCo.php" target="_blank">here</a>
+<p><a href="https://redislabs.com" target="_blank"><img src="logos/Redis_Labs_Logo.png"> </a> to record user agent datas hits on index page and visible <a href="http://arthur.xn--grgoi-csa.re/naviguateThruCo.php" target="_blank">here</a>
 </p>
 
-<p>- <a href="https://en.wikipedia.org/wiki/XML" target="_blank"><img src="logos/XML_logo.png"> </a> with <a href="https://www.javascript.com/" target="_blank"><img src="logos/javascript_logo.png"></a> on the page that embeds <a href="http://arthur.grégoi.re/map" target="_blank">the google map</a>
+<p><a href="https://en.wikipedia.org/wiki/XML" target="_blank"><img src="logos/XML_logo.png"> </a> with <a href="https://www.javascript.com/" target="_blank"><img src="logos/javascript_logo.png"></a> on the page that embeds <a href="http://arthur.grégoi.re/map" target="_blank"> the google map</a>
 
 XML again with PHP on the not referenced and protected page <a href="http://arthur.grégoi.re/musicLib" target="_blank">/musicLib</a>
 </p>
 
-<p>- <a href="http://www.webrtc.org/" target="_blank"><img src="logos/webrtc_logo.png"></a> in the <a href="http://arthur.grégoi.re/video" target="_blank">/video</a> url and working the best with firefox</p>
+<p><a href="http://www.webrtc.org/" target="_blank"><img src="logos/webrtc_logo.png"></a> in the <a href="http://arthur.grégoi.re/video" target="_blank">/video</a> url and working the best with firefox</p>
 
-<p>- <a href="https://blackfire.io/" target="_blank"><img src="logos/blackfire_logo.png"></a> agent and probe are installed and running but waiting for NewRelic to be compatible with Php7
+<p><a href="https://blackfire.io/" target="_blank"><img src="logos/blackfire_logo.png"></a> agent and probe are installed and running but waiting for NewRelic to be compatible with Php7
 </p>
-
-<p>- <a href="https://www.rabbitmq.com/" target="_blank"><img src="logos/rabbitmq_logo.png"></a> is up and running but not yet in use :(</p>
 </body>
 </html>
