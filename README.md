@@ -1,3 +1,3 @@
--------  [  http://wiki.xn--grgoi-csa.re ]  -------
+### http://wiki.xn--grgoi-csa.re
 
--  using travis-ci to deploy on static s3 bucket (see the .travis.yml file)
+>  Using travis-ci to deploy on static s3 bucket (see the .travis.yml file)
